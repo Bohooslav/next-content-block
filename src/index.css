@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Figtree", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-indigo-400);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--color-indigo-500);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--color-indigo-500);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@theme {
+  --animate-fadeIn: fadeIn 1s ease-in-out both;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-24px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
